@@ -6,6 +6,11 @@ namespace InterfaceDemo.Services
 {
     internal class HafizaServis : IServis
     {
+        public void Ekle(Oyun oyun)
+        {
+            OyunData.Oyunlar.Add(oyun);
+        }
+
         public List<Oyun> Getir()
         {
             return OyunData.Oyunlar;
